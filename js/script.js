@@ -25,4 +25,19 @@ $(function(){
         $(".btn").click(function(){
             $("#layer").removeClass("active")
         })
+
+        $(".banner").vegas({
+            slides: [
+                {   src: '/images/imgsd3.jpg' },
+                {   src: '/images/imgsd3.jpg',
+                    video: {
+                        src: [
+                            '/videos/shits_videos.mp4',
+                        ],
+                        loop: false,
+                        mute: true
+                    }
+                }
+            ]
+        });
 });
