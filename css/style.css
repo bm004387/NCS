@@ -346,8 +346,9 @@ footer{
     display: inline-block;
     width: 100px;
 }
-.btmenu li:hover{
-    font-weight: bold;
+.btmenu a img{
+    width: 50px;
+    border-radius: 10px;
 }
 .copy{
     height: 50px;
