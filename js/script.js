@@ -1,8 +1,12 @@
 $(document).ready(function(){
+    // 마우스를 올렸을 때
     $('.navi > li').mouseover(function(){
+        // navi > li 객체안에 .submenu를 찾아 하던 작업을 중지하고 slideDonw하게 한다.
         $(this).find('.submenu').stop().slideDown(500); // 500ms = 0.5s
+        // 마우스가 떠났을 때
     }).mouseout(function(){
-        $(this).find('.submenu').stop().slideUp(500);
+        // navi > li 객체안에 .submenu를 찾아 하던 작업을 중지하고 slideUp하게 한다.
+        $(this).find('.submenu').stop().slideUp(500); // 500ms = 0.5s
     });
         $('.imgslide').bxSlider({
             auto: true,// 자동재생
@@ -28,8 +32,8 @@ $(function(){
 
         $(".banner").vegas({
             slides: [
-                {   src: '/images/imgsd3.jpg' },
-                {   src: '/images/imgsd3.jpg',
+                {   src: '/images/vegas_img.jpg' },
+                {   src: '/images/vegas_img.jpg',
                     video: {
                         src: [
                             '/videos/shits_videos.mp4',
