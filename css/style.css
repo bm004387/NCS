@@ -22,13 +22,11 @@ header{
 .top{
     height: 100px;
     width: 1200px;
-    /* background: pink; */
 }
 .logo{
     float: left;
     height: 100px;
     width: 250px;
-    /* background: greenyellow; */
 }
 .logo img{
     float: left;
@@ -41,7 +39,6 @@ header{
     height: 100px;
     width: 800px;
     z-index: 1;
-    /* background-color: blanchedalmond; */
 }
 .navi{
     float: right;
@@ -81,19 +78,21 @@ header{
 }
 .submenu > li > a:hover{background-color: #30a3f3;}
 .bodywrap{
-    height: 500px;
+    height: 600px;
     width: 1200px;
-    /* background: olive; */
 }
 .imgslide{
     height: 300px;
     width: 1200px;
     position: relative;
     overflow: hidden;
-    /* background: yellow; */
 }
 .imgslide > a{
     position: absolute;
+}
+.imgslide > a img{
+    width: 1200px;
+    height: 300px;
 }
 .imgtext{
     height: 50px; 
@@ -104,10 +103,16 @@ header{
     color: #fff;
     font-weight: bold;
     line-height: 50px;
+    opacity: .5;
     background: rgba(40, 40, 40, 0.5);
     left: 50%;
     top: 50%;
-    
+}
+.bx-next{
+    background: url(../images/yys_next.svg) !important;
+}
+.bx-prev{
+    background: url(../images/yys_prev.svg) !important;
 }
 .contents{
     float: left;
@@ -157,14 +162,10 @@ header{
     border: 1px solid #ddd;
     z-index: 1;
 }
-/* .notice{
-    display: none;
-} */
 .notice ul{
     float: left;
     width: 393px;
     margin-top: 12px;
-    /* background-color: #30a3f3; */
     margin-bottom: 12px;
 }
 .notice li{
@@ -205,7 +206,6 @@ header{
     width: 395px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* background-color: aqua; */
 }
 .banner img{
     float: left;
@@ -234,7 +234,6 @@ header{
     width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* background-color: antiquewhite; */
 }
 .shortcut img{
     float: right;
@@ -280,6 +279,11 @@ header{
     background-color: #fff;
     border: 10px solid aqua;
     border-radius: 20px;
+}
+.layer_up img{
+    width: 100px;
+    float: left;
+    top: 0;
 }
 .uptitle{
     margin-top: 30px;
